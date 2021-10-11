@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1%;
+    padding: 0.5%;
 }
 
 .header .Logo {
@@ -46,7 +46,7 @@
 
 .header .BarraDePesquisa input {
     color: white;
-    padding: 5px; 
+    /* padding: 5px;  */
     height: 100%;
     width: 100%;
     background-color: transparent;

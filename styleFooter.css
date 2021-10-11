@@ -1,0 +1,73 @@
+footer{
+    width: 100%;
+    /* display: flex; */
+    margin: auto;
+    margin-top: 3%;
+    background-color: #6100FF;
+}
+
+footer .contato {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+footer .contato .coluna{
+    /* position: relative; */
+    
+    margin-left: 2%;
+    margin-top: 1%;
+    display: flex;
+}
+
+footer .contato .coluna .sub-coluna{
+    margin-left: 6%;
+}
+
+footer .contato .coluna .sub-coluna .info{
+    padding-top: 2%;
+    display: flex;
+}
+
+footer .contato .coluna .sub-coluna .info img{
+    width: 36px;
+    height: 36px;
+}
+
+footer .contato .coluna .sub-coluna .info a{
+    margin-top: 5%;
+    margin-left: 5%;
+    
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: -0.05em;
+    text-decoration: none;
+
+    color: #FFFFFF;
+}
+
+footer .contato .coluna .endereco{
+    margin: auto;
+    
+    /* margin-top: 45%; */
+}
+
+footer .contato .coluna .endereco a{
+    text-decoration: none;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: -0.05em;
+    
+    color: #FFFFFF;
+}
+
+footer .contato .coluna .linked-logo{
+    position: relative;
+}

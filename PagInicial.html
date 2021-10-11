@@ -2,7 +2,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Blog da Greycy - home</title>
+    <title >Blog da Greycy - home</title>
+    <link rel="icon" type="imagem/png" href="Artes/tituloIcon.svg" />
     <style>
         @font-face {
             font-family: MasterOfBreak;
@@ -13,44 +14,34 @@
             src: url(./Fontes/BM-HANNA.ttf);
         }
     </style>
-    <link href="styleHeader.css" rel="stylesheet">
+    
     <link href="stylePagInicial.css" rel="stylesheet">
-    <script src=""></script>
+    <link href="styleHeader.css" rel="stylesheet">
+    <link href="styleFooter.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
 </head>
 
 <body>
-    <header class="header">        
-        <div class="Logo">
-            <img src="./Artes/Logo.svg">
-        </div>
-        
-        <div class="CabecalhoBotoes">
-            <nav>
-                <a href="#">HOME</a> 
-                <a href="#">SOBRE</a>
-                <a href="#">CONTATO</a>
-                <a href="#">BLOG</a>
-            </nav>
-        </div>
-        
-        
-        <div>
-            <div class="BarraDePesquisa">
-                <input type="search" placeholder="Search">
-                <button>
-                    <img src="./Artes/Lupa.svg" alt="" >
-                </button>
-            </div>
-        </div>
-        
-    </header>
-    
+   
+    <header id="header" class="header"></header>
     <div class="textoMotivador">
         <span>
-            “O bom conteúdo é a <br>
-            melhor ferramenta de vendas do mundo”<br>
+            “O bom conteúdo é a 
+        </span>
+        <span>
+            melhor ferramenta de vendas do mundo”
+        </span>
+        <span>
             -Marcus Sheridan
         </span>
+        
     </div>
     
     <div class="bibliografia">
@@ -80,41 +71,151 @@
     <div class="Assuntos">
         <h1 class="titulo">Explore os assuntos sobre marketing</h1>
         <div class="Cards">
-            <template>
-                <a>
+            <!-- <template id="Card#1">
+                
                     <div class="Card">
+                        <a href="">
                         <img src="./Artes/tendencias-icon.svg">    
                         <span>Atenção em tendências
                             de mercado
                         </span>
-                        <a  href="">Ir >></a>
+                        <span  href="">Ir >></span>
+                        </a>
                     </div>
+                
+            </template>  -->
+
+            <div class="Card" id="1">
+                <a href="">
+                <img src="./Artes/tendencias-icon.svg">    
+                <span>Atenção em tendências
+                    de mercado
+                </span>
+                <span  href="">Ir >></span>
                 </a>
-            </template> 
+            </div>
+
+            <div class="Card" id="2">
+                <a href="">
+                <img src="./Artes/compartilhamento-de-dados-temclaro.png">    
+                <span>Análise
+                    de Mercado
+                </span>
+                <span  href="">Ir >></span>
+                </a>
+            </div>
+
+            <div class="Card" id="3">
+                <a href="">
+                <img src="./Artes/economia-temaclaro.png">    
+                <span>Finanças e 
+                    Marketing
+                </span>
+                <span  href="">Ir >></span>
+                </a>
+            </div>
+
+            <div class="Card" id="4">
+                <a href="">
+                <img src="./Artes/exclusao-social-temaclaro.png">    
+                <span>Captação e 
+                    retenção de público
+                </span>
+                <span  href="">Ir >></span>
+                </a>
+            </div>
+
+            <div class="Card" id="5">
+                <a href="">
+                <img src="./Artes/exclusao-social-temaclaro.png">    
+                <span>Marketing Orgânico
+                </span>
+                <span  href="">Ir >></span>
+                </a>
+            </div>
+
+            
+            <div class="Card" id="6">
+                <a href="">
+                <img src="./Artes/emprego-temaclaro.png">    
+                <span>Dicas de vagas
+                </span>
+                <span  href="">Ir >></span>
+                </a>
+            </div>
+
+            <div class="Card" id="7">
+                <a href="">
+                <img src="./Artes/esboco-de-casa-temaclaro.png
+                "> 
+                <span>Organização e planejamento
+                </span>
+                <span  href="">Ir >></span>
+                </a>
+            </div>
             
         </div>
-        <a class="botao" href="#">Mostrar Tudo</a> 
+        <button> Mostrar Tudo</button>
     </div>
     
     <div class="avaliacoes">
-        <div class="comentario">
-            <div class="info">
-                <div class="containerOut">
-                    <img src="./Artes/foto-usuario.svg" class="userIcon">
-                    <div class="containerIn">
-                        <h1 id="userName">Nome Sobrenome</h1>
-                        <p id="comentarioTexto">vdmvpmdvcadmvcopsda</p>
+        <!-- <template> -->
+            <h1 class="titulo">Explore os assuntos sobre marketing</h1>
+            <div class="comentario">
+                <div class="info">
+                    <div class="containerOut">
+                        <img src="./Artes/foto-usuario.svg" class="userIcon">
+                        <div class="containerIn">
+                            <h1 id="userName">Nome Sobrenome</h1>
+                            <p id="comentarioTexto">Exemplo</p>
+                        </div>
                     </div>
+                    
                 </div>
-                 
+                <div class="RespostaBotao">
+                    <div>Respostas</div>
+                    <img src="./Artes/botaoResposta.svg">
+                </div>
             </div>
-            <div class="RespostaBotao">
-                <div>Respostas</div>
-                <img src="./Artes/botaoResposta.svg">
+        <!-- </template> -->
+        
+        <!-- <template> -->
+            <div class="resposta">
+                <div class="info">
+                    <div class="containerOut">
+                        <img src="./Artes/foto-usuario.svg" class="userIcon">
+                        <div class="containerIn">
+                            <h1 id="userName">Nome Sobrenome</h1>
+                            <p id="comentarioTexto">Exemplo</p>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
-        </div>   
+            
+        <!-- </template> -->
+        
+    </div>   
+    
+    <div class="CarregarMais">
+        
+        <button> 
+            <div class="containerIn">
+                <span>Carregar Mais</span>
+                <img src="./Artes/seta-para-baixo.png">
+            </div>
+        </button>        
+        
     </div>
     
+    <div class="image-decoracao-rodape">
+        <img src="./Artes/rota-aviao-decoracao-rodape.png">
+    </div>
+    
+    <footer id="footer" class="footer"></footer>
+    
 </body>
+
+<script src="scriptPagInicial.js"></script>
 
 </html>

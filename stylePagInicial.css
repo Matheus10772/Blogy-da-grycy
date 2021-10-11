@@ -11,6 +11,14 @@ body {
     background-size: contain;
     font-family: BM-HANNA, sans-serif;
     background-repeat: no-repeat;
+    background-color: #F8F8F8;
+}
+
+button{
+    
+    background-color: transparent;
+    border: none;
+    
 }
 
 .titulo {
@@ -20,6 +28,7 @@ body {
 
 .botao {
     display: inline-block;
+    margin: auto;
     background-color: #6C11FF;
     line-height: 0; 
     padding: 25px 20px 20px 20px; 
@@ -34,18 +43,28 @@ body {
     transition: background-color 200ms;
 }
 
-.userIcon {
-    width: 108px;
-}
-
 .botao:hover {  
     background-color: rgba(108, 17, 255, 0.85);
     border-color: #6200ff;
 } 
 
+.botao:active{
+    background-color: rgb(98, 0, 255);
+    transform: translateY(4px);
+}
+
+.userIcon {
+    width: 108px;
+}
+
+
+
 
 .textoMotivador {
     color: white;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
     font-family: mulish;
     font-size: 20px;
     text-align: center;
@@ -53,7 +72,7 @@ body {
 
 .bibliografia{
     width: 80%; 
-    margin: 50px auto;
+    margin: 9% auto;
     display: flex;
 }
 
@@ -87,6 +106,7 @@ body {
 .Assuntos {
     width: 80%;
     margin: auto;
+    text-align: center;
 }
 
 .Assuntos h1{
@@ -104,21 +124,26 @@ body {
     
 }
 .Assuntos .Cards .Card {
+    transform: scale(0.9);
+    transition: transform 250ms;
+}
+
+
+.Assuntos .Cards .Card a{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 5px;
     margin-top: 16px;
     justify-content: space-around;
-    width: 240px;
+    width: 300px;
     height: 300px;
-    padding: 10px;
+    padding: 5px;
     font-family: 'Baloo Tammudu', sans-serif;
     background: rgba(141, 74, 250, 0.8);
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
-    transform: scale(0.9);
-    transition: transform 250ms;
+    text-decoration: none;
 }
 
 .Assuntos .Cards .Card:hover {
@@ -126,6 +151,9 @@ body {
 }
 
 .Assuntos .Cards .Card img{
+    /* margin-bottom: 25px; */
+    width: 120px;
+    height: 120px;
     filter: drop-shadow(6px 4px 2px rgba(0, 0, 0, 0.25));
 }
 
@@ -138,22 +166,55 @@ body {
     
 }
 
-.Assuntos .Cards .Card a {
-    text-decoration: none;
+.Assuntos .Cards .Card span {
+    
     font-size: 28px;
     color: white;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.Assuntos button{
+    display: inline-block;
+    margin: auto;
+    background-color: #6C11FF;
+    line-height: 0; 
+    padding: 25px 20px 20px 20px; 
+    border: 0.5px solid #6C11FF;
+    box-shadow: 7px 7px 11px rgba(108, 17, 255, 0.25);
+    -webkit-text-stroke: 0.5 black;
+    border-radius: 5px;
+    font-family: 'Baloo Tammudu', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: background-color 200ms;
+}
+
+.Assuntos button:hover{
+    background-color: rgba(108, 17, 255, 0.85);
+    border-color: #6200ff;
+}
+
+.Assuntos button:active{
+    background-color: rgb(98, 0, 255);
+    transform: translateY(4px);
+}
+
 .avaliacoes{
-    width: 75%;
-    margin: 5% auto;
-    background-color: rgba(149, 85, 252, 0.95);
-    border-radius: 20px;
+    width: 100%;
+}
+
+.avaliacoes .titulo{
+    text-align: center;
+    margin: auto;
 }
 
 .avaliacoes .comentario{
-    width: 91%;
+    width: 83%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(149, 85, 252, 0.95);
+    border-radius: 10px;
 }
 
 .avaliacoes .comentario .info{
@@ -170,7 +231,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: 1%;
-    width: 100%;
+    width: 80%;
 }
 
 
@@ -206,7 +267,8 @@ body {
 
 .avaliacoes .comentario .RespostaBotao{
     display: flex;
-    margin: 2%;
+    margin-top: 2%;
+    margin-left: 2%;
     font-family: Arial;
     font-style: normal;
     font-weight: bold;
@@ -221,5 +283,120 @@ body {
 
 .avaliacoes .comentario .RespostaBotao img{
     margin-left: 0.8%;
+}
+
+.avaliacoes .resposta{
+    width: 74%;
+    display: flex;
+    margin: 0 auto;
+    margin-left: 18%;
+    margin-top: 0;
+    background-color: rgba(149, 85, 252, 0.95);
+    border-radius: 0px 0px 10px 10px;
+    
+}
+
+.avaliacoes .resposta .info{
+    margin: 2%;
+    width: 100%;
+}
+
+.avaliacoes .resposta .info .containerOut{
+    display: flex;
+    width: 100%;
+}
+
+.avaliacoes .resposta .info .containerOut .containerIn{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1%;
+    width: 80%;
+}
+
+
+.avaliacoes .resposta .info .containerOut .containerIn h1{
+    margin-top: 3%; 
+    color: white;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.5px;
+    text-shadow: 5px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+.avaliacoes .resposta .info .containerOut .containerIn p{
+    background: white;
+    border-radius: 5px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 1%;
+    width: 100%;
+    color: black;
+    margin-top: 2%
+}
+
+.CarregarMais {
+    display: none;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.CarregarMais button{
+    margin: 0% auto;
+    display: block;
+}
+
+.CarregarMais .containerIn {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.CarregarMais  span{
+    margin: auto;
+    text-align: center;
+    
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 40px;
+    text-align: center;
+    
+    color: #6C11FF;
+}
+
+.CarregarMais  img{
+    margin: auto;
+    width: 74px;
+    height: 74px;
+}
+
+
+
+.image-decoracao-rodape {
+    display: flex;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+    width: 100%;
+}
+
+.image-decoracao-rodape img{
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-decoracao-rodape button{
+    text-decoration: none;
 }
 
